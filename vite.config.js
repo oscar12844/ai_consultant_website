@@ -7,7 +7,9 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig(({ command }) => ({
-  plugins: [vue(), command === "serve" && vueDevTools(), tailwindcss()].filter(Boolean),
+  plugins: [vue(), command === "serve" && vueDevTools(), tailwindcss()].filter(
+    Boolean,
+  ),
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
