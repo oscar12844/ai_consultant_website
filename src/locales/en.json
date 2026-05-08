@@ -240,7 +240,7 @@
       "a": "Most projects take 2–6 weeks depending on complexity. We'll give you a clear timeline upfront."
     },
     "faq3": {
-      "q": "Why not just vibe-code it with AI?",
+      "q": "Why not just vibe-code it with AI? why need us?",
       "a": "AI can generate code, but you can't tell if it's good. Vibe-coded apps break silently and have hidden security flaws. The moment you need real integrations — payments, databases, auth, third-party APIs — you need an engineer making the right calls. We give you AI speed with expert oversight."
     },
     "faq4": {
