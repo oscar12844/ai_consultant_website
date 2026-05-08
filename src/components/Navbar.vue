@@ -186,7 +186,12 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
             {{ t("nav.contact") }}
           </RouterLink>
           <button
-            @click="() => { toggleLocale(); mobileMenuOpen = false; }"
+            @click="
+              () => {
+                toggleLocale();
+                mobileMenuOpen = false;
+              }
+            "
             class="px-4 py-3 rounded-lg text-sm font-medium text-slate-400 hover:text-white hover:bg-white/5 text-left transition-all duration-200"
           >
             {{ locale === "en" ? "中文" : "EN" }}
