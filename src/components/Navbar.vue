@@ -176,7 +176,7 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
             "
             @click="mobileMenuOpen = false"
           >
-            {{ t("nav.home") }}
+            <span class="block text-center">{{ t("nav.home") }}</span>
           </RouterLink>
           <RouterLink
             to="/contact"
@@ -186,10 +186,7 @@ onUnmounted(() => window.removeEventListener("scroll", handleScroll));
             {{ t("nav.contact") }}
           </RouterLink>
           <button
-            @click="
-              toggleLocale;
-              mobileMenuOpen = false;
-            "
+            @click="() => { toggleLocale(); mobileMenuOpen = false; }"
             class="px-4 py-3 rounded-lg text-sm font-medium text-slate-400 hover:text-white hover:bg-white/5 text-left transition-all duration-200"
           >
             {{ locale === "en" ? "中文" : "EN" }}
