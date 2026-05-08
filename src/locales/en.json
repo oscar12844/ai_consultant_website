@@ -1,0 +1,260 @@
+{
+  "nav": {
+    "home": "Home",
+    "contact": "Contact Me",
+    "bannerSeatsPre": "Only",
+    "bannerSeatsNum": "2",
+    "bannerSeatsPost": "client spots left",
+    "bannerDesc": "We take on no new projects once full. Don't let someone else's idea ship before yours.",
+    "bannerCta": "Claim a spot →"
+  },
+  "hero": {
+    "badge": "AI-Powered App Development Studio",
+    "h1": "You have an idea,",
+    "h2": "we build it.",
+    "sub": "You've got a great idea for an app, website, or AI tool — but the backend, database, security, and deployment? That's where most non-technical founders get stuck.",
+    "subAccent": "We fill that gap.",
+    "cta1": "Start Building Today",
+    "cta2": "See What We Build",
+    "scroll": "Scroll",
+    "gymCard": "Gym App",
+    "storeCard": "Online Store",
+    "chat": {
+      "name": "AI Assistant",
+      "status": "● Online",
+      "placeholder": "Type a message…",
+      "msg0": "Can I book a table for 2?",
+      "msg1": "Sure! Tonight at 7 PM works. Shall I confirm?",
+      "msg2": "Yes please 🙏",
+      "msg3": "Done! Confirmation sent to your email."
+    }
+  },
+  "for": {
+    "badge": "Who Is This For?",
+    "h2": "Built for people with",
+    "h2Accent": "expertise, not code",
+    "sub": "If you know your industry inside out but have never written a line of code — you're exactly who we built this for.",
+    "person0": {
+      "emoji": "🏋️",
+      "role": "Fitness Coach",
+      "dream": "Turn my training programmes into an app",
+      "build": "Workout app with bookings, video plans, progress tracking & in-app payments"
+    },
+    "person1": {
+      "emoji": "🍽️",
+      "role": "Restaurant Owner",
+      "dream": "Take orders online and run a loyalty programme",
+      "build": "Online ordering system, table reservations, and AI-powered customer service bot"
+    },
+    "person2": {
+      "emoji": "🎓",
+      "role": "Educator / Coach",
+      "dream": "Sell my courses and mentor online",
+      "build": "Course platform with video hosting, student dashboards, certificates & Stripe billing"
+    },
+    "person3": {
+      "emoji": "💆",
+      "role": "Beauty & Wellness Studio",
+      "dream": "Let clients book and pay without calling me",
+      "build": "Booking system, auto-reminders, loyalty points, and a branded client app"
+    },
+    "person4": {
+      "emoji": "🛍️",
+      "role": "Small Business Owner",
+      "dream": "Take my shop online and grow beyond my local area",
+      "build": "Full e-commerce store with inventory, payments, shipping tracking & analytics"
+    },
+    "person5": {
+      "emoji": "🏠",
+      "role": "Property Agent",
+      "dream": "Showcase listings and capture leads automatically",
+      "build": "Listings portal, inquiry management, AI chatbot to qualify leads 24/7"
+    },
+    "cta": "Sound like you? Let's build it →"
+  },
+  "pain": {
+    "badge": "The Problem",
+    "h2": "Great ideas die in the",
+    "h2Accent": "technical gap",
+    "sub": "You can vibe-code a UI, use no-code tools, or even prompt GPT to write components — but there's a whole layer of tech that stops most people cold.",
+    "ctaText": "Sound familiar?",
+    "ctaLink": "Let's talk about your project →",
+    "item0": {
+      "icon": "🗄️",
+      "title": "No Backend? No Problem.",
+      "desc": "You have the UI idea — we wire up the server, APIs, and logic that actually make it work."
+    },
+    "item1": {
+      "icon": "🔐",
+      "title": "Security You Can't Skip",
+      "desc": "Authentication, data encryption, OWASP best practices — we handle it so you never get hacked."
+    },
+    "item2": {
+      "icon": "💾",
+      "title": "Database Architecture",
+      "desc": "Choosing the right database, designing schemas, handling migrations — it's a full-time job. We've got it."
+    },
+    "item3": {
+      "icon": "🚀",
+      "title": "Deployment & Hosting",
+      "desc": "From localhost to the internet. CI/CD pipelines, cloud setup, domain linking — all handled by us."
+    },
+    "item4": {
+      "icon": "📈",
+      "title": "Scaling Under Pressure",
+      "desc": "When your app goes viral, it needs to not crash. We build for scale from day one."
+    },
+    "item5": {
+      "icon": "🛡️",
+      "title": "Compliance & Privacy",
+      "desc": "GDPR, CCPA, user data rights — legal tech requirements that most developers forget. We don't."
+    }
+  },
+  "services": {
+    "badge": "What We Build",
+    "h2": "One team,",
+    "h2Accent": "all the tech",
+    "sub": "We don't just write code. We architect, secure, deploy, and maintain your entire product from day one.",
+    "item0": {
+      "title": "Mobile Apps",
+      "desc": "iOS & Android apps built with modern frameworks. From idea to App Store in weeks, not months."
+    },
+    "item1": {
+      "title": "AI Agents",
+      "desc": "Custom AI that works for your business 24/7 — customer support, automation, data processing, whatever you need."
+    },
+    "item2": {
+      "title": "Websites & Web Apps",
+      "desc": "Fast, beautiful, SEO-ready websites and full-featured web apps that actually convert visitors into customers."
+    }
+  },
+  "steps": {
+    "badge": "How It Works",
+    "h2": "From idea to",
+    "h2Accent": "live product",
+    "sub": "Simple, transparent, and fast. No tech experience needed.",
+    "step": "STEP",
+    "item0": {
+      "num": "01",
+      "icon": "💡",
+      "title": "Tell Us Your Idea",
+      "desc": "Book a free consultation. You don't necessarily need to know tech — just tell us what you want your app / website / agent to do."
+    },
+    "item1": {
+      "num": "02",
+      "icon": "⚙️",
+      "title": "We Design & Build",
+      "desc": "Our team handles everything — architecture, code, database, security, and deployment. You stay in the loop every step of the way."
+    },
+    "item2": {
+      "num": "03",
+      "icon": "🚀",
+      "title": "You Launch & Grow",
+      "desc": "Get a fully working product ready. We hand it off clean and documented."
+    }
+  },
+  "demo": {
+    "badge": "What We Can Build",
+    "h2": "See what we can",
+    "h2Accent": "build",
+    "sub": "The examples below show the kind of products we can create for you from scratch, with the backend, integrations, and deployment handled properly.",
+    "mobile": {
+      "badge": "📱 Mobile App",
+      "h3": "Mobile apps built for",
+      "h3Accent": "real business use",
+      "p": "If you need an app for customers, staff, or your own operations, we can build the full product, not just the screens. That means auth, payments, data flow, notifications, and everything behind the interface working together.",
+      "feature0": "Secure user authentication (OAuth2)",
+      "feature1": "Stripe payment processing",
+      "feature2": "Real-time order tracking",
+      "feature3": "Push notifications & analytics",
+      "feature4": "Admin dashboard for the owner"
+    },
+    "web": {
+      "badge": "🌐 Web App",
+      "h3": "Web apps with",
+      "h3Accent": "the systems behind them",
+      "p": "Whether you need a client portal, internal dashboard, booking platform, or SaaS product, we can build the full web app with the database, API, user accounts, billing, and infrastructure done properly.",
+      "feature0": "Multi-tenant architecture",
+      "feature1": "PostgreSQL with proper indexing",
+      "feature2": "REST API with rate limiting",
+      "feature3": "Subscription billing via Stripe",
+      "feature4": "SSL, DDoS protection, CDN"
+    },
+    "ai": {
+      "badge": "🤖 AI Agent",
+      "h3": "AI systems that",
+      "h3Accent": "fit your workflow",
+      "p": "If you want AI in your business, we can build agents and automations that connect to your content, your tools, and your process, so they do useful work instead of just generating text.",
+      "feature0": "Trained on your business content",
+      "feature1": "Integrated with your existing tools",
+      "feature2": "Handles bookings, FAQs & support",
+      "feature3": "Escalates complex cases to human",
+      "feature4": "GDPR-compliant data handling"
+    }
+  },
+  "cta": {
+    "h2": "Ready to build your idea?",
+    "sub": "Stop letting tech hold you back. DM us on Instagram and let's turn your vision into a real, production-ready product.",
+    "button": "Get in Touch Now",
+    "note": "Free consultation · No commitment · Response within 24h"
+  },
+  "footer": {
+    "copy": "© 2026 iCraftHK. Built with ❤️ for non-technical founders."
+  },
+  "contact": {
+    "badge": "Let's Talk",
+    "h1": "Ready to build",
+    "h1Accent": "something great?",
+    "sub": "The fastest way to reach us is a quick DM on Instagram. Tell us about your idea and we'll get back to you within 24 hours with a free consultation.",
+    "ig": {
+      "h2": "DM us on Instagram",
+      "p": "No contact forms. No email chains. Just a quick DM and we'll schedule a free 20-minute call to hear about your idea.",
+      "button": "Message us on Instagram",
+      "soon": "Instagram link coming soon — check back shortly",
+      "estimation": "Send us this and we'll give you a quick rough estimate.",
+      "sayTitle": "Tell us:",
+      "say0": "What's your idea / what do you want to build?",
+      "say1": "What's your rough budget?",
+      "say2": "What's your ideal timeline?",
+      "say3": "What key features do you need?",
+      "say4": "Do you have a team, or is it just you?",
+      "alert": "We only respond to messages in this format. We want to save our energy for people who are serious about making their idea real."
+    },
+    "v0Pre": "Reply in",
+    "v0Acc": "24h",
+    "v1Pre": "Free",
+    "v1Acc": "consultation",
+    "v2Pre": "No",
+    "v2Acc": "commitment",
+    "faqH2": "Common Questions",
+    "faq0": {
+      "q": "Who is this suitable for?",
+      "a": "Anyone with an idea — whether you're an expert in your field wanting to turn your expertise into an app (e.g. a coach wanting to create an app for their students), someone starting a business, or just looking to build a simple website. No technical background needed."
+    },
+    "faq1": {
+      "q": "How much does it cost?",
+      "a": "Pricing depends on the project scope. DM us on Instagram and we'll give you a free estimate after a quick chat."
+    },
+    "faq2": {
+      "q": "How long does it take to build?",
+      "a": "Most projects take 2–6 weeks depending on complexity. We'll give you a clear timeline upfront."
+    },
+    "faq3": {
+      "q": "Why not just vibe-code it with AI?",
+      "a": "AI can generate code, but you can't tell if it's good. Vibe-coded apps break silently and have hidden security flaws. The moment you need real integrations — payments, databases, auth, third-party APIs — you need an engineer making the right calls. We give you AI speed with expert oversight."
+    },
+    "faq4": {
+      "q": "Do I need to know how to code?",
+      "a": "Not at all. You just need an idea. We handle everything from architecture to deployment."
+    },
+    "faq5": {
+      "q": "Will I own the code?",
+      "a": "Yes, 100%. When the project is done, you get full ownership of the codebase and all assets."
+    },
+    "faq6": {
+      "q": "What happens after launch?",
+      "a": "We maintain the code for you. As services evolve and you get new ideas, just tell us what you want — we keep building. You own the vision; we handle the execution."
+    },
+    "footerCopy": "© 2026 iCraftHK. Built with ❤️ for non-technical people."
+  }
+}

@@ -1,0 +1,391 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #0f172a;
+  --color-brand-purple: #7c3aed;
+  --color-brand-blue: #2563eb;
+  --color-brand-cyan: #06b6d4;
+  --color-brand-orange: #f97316;
+  --color-brand-pink: #ec4899;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #7c3aed, #2563eb, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-warm {
+  background: linear-gradient(135deg, #f97316, #ec4899, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+
+/* Animated gradient border */
+.gradient-border {
+  position: relative;
+  background:
+    linear-gradient(#0f172a, #0f172a) padding-box,
+    linear-gradient(135deg, #7c3aed, #2563eb, #06b6d4) border-box;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+}
+
+/* Blob animations */
+@keyframes blob-move {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(40px, -60px) scale(1.1);
+  }
+  66% {
+    transform: translate(-30px, 40px) scale(0.9);
+  }
+}
+
+@keyframes side-float-slow {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(1deg);
+  }
+}
+
+@keyframes side-float-fast {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-10px) translateX(6px);
+  }
+}
+
+@keyframes side-float-delayed {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(12px) translateX(-5px);
+  }
+}
+
+.animate-blob {
+  animation: blob-move 10s ease-in-out infinite;
+}
+
+.hero-float-slow {
+  animation: side-float-slow 7s ease-in-out infinite;
+}
+
+.hero-float-fast {
+  animation: side-float-fast 5.5s ease-in-out infinite;
+}
+
+.hero-float-delayed {
+  animation: side-float-delayed 6.5s ease-in-out infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+.animation-delay-6000 {
+  animation-delay: 6s;
+}
+
+/* Fade-up for GSAP targets */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Glow effect */
+.glow-purple {
+  box-shadow: 0 0 40px rgba(124, 58, 237, 0.3);
+}
+
+.glow-blue {
+  box-shadow: 0 0 40px rgba(37, 99, 235, 0.3);
+}
+
+.hero-side-card {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.82),
+    rgba(15, 23, 42, 0.58)
+  );
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 1.25rem;
+}
+
+/* ── iPhone mockup ── */
+.hero-iphone {
+  width: 9rem;
+  background: #111827;
+  border-radius: 2.4rem;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  padding: 0.5rem;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.hero-iphone-shell {
+  background: #0d1117;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-iphone-island {
+  width: 3.2rem;
+  height: 0.7rem;
+  background: #000;
+  border-radius: 9999px;
+  margin: 0.55rem auto 0;
+  flex-shrink: 0;
+}
+
+.hero-iphone-screen {
+  flex: 1;
+  min-height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #1e1b4b 0%, #0f172a 100%);
+}
+
+.hero-iphone-home {
+  width: 3rem;
+  height: 0.28rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 9999px;
+  margin: 0.6rem auto 0.55rem;
+  flex-shrink: 0;
+}
+
+/* ── Browser mockup ── */
+.hero-browser {
+  background: #111827;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.hero-browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.7rem;
+  background: #1e293b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero-trafficlight {
+  width: 0.52rem;
+  height: 0.52rem;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+.hero-browser-url {
+  margin-left: 0.45rem;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 9999px;
+  padding: 0.16rem 0.55rem;
+  font-size: 0.62rem;
+  color: #64748b;
+  letter-spacing: 0.02em;
+}
+
+.hero-browser-viewport {
+  height: 7.5rem;
+  background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Chat app mockup ── */
+.hero-chat {
+  width: 14rem;
+  background: #111827;
+  border-radius: 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.hero-chat-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 0.85rem 0.6rem;
+  background: #1e293b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero-chat-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+.hero-chat-body {
+  padding: 0.7rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.hero-bubble {
+  max-width: 82%;
+  padding: 0.42rem 0.65rem;
+  border-radius: 1rem;
+  font-size: 0.66rem;
+  line-height: 1.4;
+}
+
+.hero-bubble-user {
+  align-self: flex-end;
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.5),
+    rgba(37, 99, 235, 0.4)
+  );
+  color: #f1f5f9;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  border-bottom-right-radius: 0.2rem;
+}
+
+.hero-bubble-ai {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.06);
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom-left-radius: 0.2rem;
+}
+
+.hero-chat-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  background: #1e293b;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero-chat-send {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Shared mock icon / title ── */
+.hero-mock-icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.55),
+    rgba(37, 99, 235, 0.45)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+}
+
+.hero-mock-title {
+  color: #e2e8f0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 3px;
+}
